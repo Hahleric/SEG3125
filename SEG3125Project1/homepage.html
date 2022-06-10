@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <title>Dr.Lee High Quality Dentistry</title>
+
+</head>
+<body>
+    <div id="overlay">
+    <div style="display: flex">
+        <div class="greyRec"></div>
+        <div class="blackRec">
+            <p class="titleText">
+                <b>High Quality Dentistry</b>
+            </p>
+        </div>
+        <div class="blueLine"></div>
+        <div class="greyRec2"></div>
+    </div>
+
+<!--    <div style="position: absolute; width: 100%;left: 0;height:px;top: 48px;background: url('pics/thumbnail_image.png') no-repeat fixed;background-size: 100%">-->
+<!--        <p class="drLeeText">Dr.Lee High Quality Dentistry</p>-->
+<!--        <p class="delText">Deliver best experience to your family</p>-->
+<!--        <button class="primeBtn"></button>-->
+<!--        <button class="secBtn"></button>-->
+<!--    </div>-->
+    <div>
+        <img src="pics/thumbnail_image.png" style="position: absolute; width: 100%;left: 0;top: 48px; min-width: 1950px; max-height: 401px" alt="bg">
+        <p class="drLeeText">Dr.Lee High Quality Dentistry</p>
+        <p class="delText">Deliver best experience to your family</p>
+        <button id="primeBtn" class="primeBtn" onclick="raiseBookingPage()">Book an appointment</button>
+        <button id="secBtn" onclick="raiseBookingPage()"  class="secBtn">Leave a message</button>
+    </div>
+    <div style="background: #000000;width: 100%; height: 401px;min-width: 1950px; position:absolute; left: 0; top: 449px;">
+        <img src="pics/thumbnail_image2.png" style="position: absolute; width: 550px; height: 370px; top:14px; bottom: 14px; left: 1000px">
+        <p style="position: absolute; left: 420px; top : 26px; color: white; font-size: 20px"><b>Best care that puts your family first</b></p>
+        <p style="font-family: IBM Plex Sans;position: absolute; left: 420px; top: 80px;color: #F4F4F4; font-size: 12px;font-weight: 300;">Our entire team does our best to create a comfortable and welcoming <br>environment So that your visit to the dentist can be as stress-free as<br> possible. We have lots of experience working with patients of all ages <br>and do our
+            best to communicate throughout your visit so that we <br>can adjust to your specific needs and preferences! Learn more about <br>our family dentistry services.</p>
+    </div>
+    <div style="background: #D9FBFB; width: 100%; height: 401px; min-width: 1950px;position: absolute; left: 0; top: 850px;">
+        <p style="position: absolute; left: 420px; top: 26px; color: black; font-size: 20px"><b>Services</b></p>
+        <button id="hygiene" class="textBtn" onclick="visibleByName('hygiene')" style="position: absolute; left: 706px; top: 50px; color: black;font-size: 16px; font-weight: 300">Prevent Hygiene</button>
+        <button id="oral" onclick="visibleByName('oral')" class="textBtn" style="position: absolute; left: 906px; top: 50px; color: black;font-size: 16px; font-weight: 300">Oral Surgeons</button>
+        <button id="orthog" onclick="visibleByName('orthog')" class="textBtn" style="position: absolute; left: 1106px; top: 50px; color: black;font-size: 16px; font-weight: 300">Orthodontics</button>
+        <div id="orthogText" style="display: none">
+        <p style="position: absolute; left:706px; top :96px">
+            <b style="font-size: 20px; font-family: IBMPlexSans;font-weight: 400 ">
+                Replace missing teeth  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4000$
+            </b>        </p>
+            <p style="position: absolute; left:706px; top :196px;font-size: 16px;font-family: IBMPlexSans; font-weight: 300;">Enjoy improved bites, aethetic appearance after dental
+        <br>implants
+        <br>
+        <br>
+        Available experts: Dr.Lee</p>
+        </div>
+
+        <div id="hygieneText" style="display:block;">
+            <p style="position: absolute; left:706px; top :96px;">
+                <b style="font-size: 20px; font-family: IBMPlexSans;font-weight: 400 ">
+                    Clean your teeth  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100$
+                </b>        </p>
+            <p style="position: absolute; left:706px; top :196px;font-size: 16px;font-family: IBMPlexSans; font-weight: 300;">Enjoy white teeth, aethetic appearance after hygiene
+                <br>prevention
+                <br>
+                <br>
+                Available experts: Mr.Dzousa, Dr.Noordam</p>
+        </div>
+
+        <div id="oralText" style="display: none">
+            <p style="position: absolute; left:706px; top :96px">
+                <b style="font-size: 20px; font-family: IBMPlexSans;font-weight: 400 ">
+                    Perform oral surgery  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp970$
+                </b>        </p>
+            <p style="position: absolute; left:706px; top :196px;font-size: 16px;font-family: IBMPlexSans; font-weight: 300;">Enjoy healthy teeth, aethetic appearance after perfect
+                <br>surgery
+                <br>
+                <br>
+                Available experts: Dr.Lee, Dr.Noordam</p>
+        </div>
+
+    </div>
+
+    <div style="background: white; width: 100%; height: 401px;min-width: 1950px; position: absolute; left: 0; top: 1251px">
+        <p style="position: absolute; left: 420px; top: 26px; color: black; font-size: 20px"><b>Experts</b></p>
+        <svg style="position: absolute;left: 706px; top:50px; " id="icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32"><defs><style>.cls-1{fill:none}</style></defs><title>health-cross</title><path fill="#740937" d="M19,28H13a2.0023,2.0023,0,0,1-2-2V21H6a2.0023,2.0023,0,0,1-2-2V13a2.002,2.002,0,0,1,2-2h5V6a2.002,2.002,0,0,1,2-2h6a2.0023,2.0023,0,0,1,2,2v5h5a2.0023,2.0023,0,0,1,2,2v6a2.0027,2.0027,0,0,1-2,2H21v5A2.0027,2.0027,0,0,1,19,28ZM6,13v6h7v7h6V19h7V13H19V6H13v7Z" transform="translate(0 0)"/><rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/></svg>
+        <svg style="position: absolute;left: 1006px; top:50px; " id="icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: none;
+                    }
+                </style>
+            </defs>
+            <path fill="#740937" d="M25,10H7a3.0033,3.0033,0,0,0-3,3v6a2.0023,2.0023,0,0,0,2,2v7a2.0023,2.0023,0,0,0,2,2h4a2.0023,2.0023,0,0,0,2-2V16H12V28H8V19H6V13a1.0009,1.0009,0,0,1,1-1H25a1.0009,1.0009,0,0,1,1,1v6H24v9H20V16H18V28a2.0023,2.0023,0,0,0,2,2h4a2.0023,2.0023,0,0,0,2-2V21a2.0023,2.0023,0,0,0,2-2V13A3.0033,3.0033,0,0,0,25,10Z" transform="translate(0 0)"/>
+            <path fill="#740937" d="M10,9a4,4,0,1,1,4-4A4.0042,4.0042,0,0,1,10,9Zm0-6a2,2,0,1,0,2,2A2.0023,2.0023,0,0,0,10,3Z" transform="translate(0 0)"/>
+            <path fill="#740937" d="M22,9a4,4,0,1,1,4-4A4.0042,4.0042,0,0,1,22,9Zm0-6a2,2,0,1,0,2,2A2.0023,2.0023,0,0,0,22,3Z" transform="translate(0 0)"/>
+            <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+        </svg>
+
+        <svg style="position: absolute;left: 1306px; top:50px; " id="icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32"><defs><style>.cls-1{fill:none;}</style></defs><title>microscope</title><path fill="#740937" d="M25.3943,24a7.8772,7.8772,0,0,0-1.6707-8.5684,3.918,3.918,0,0,0-1.0844-4.414l2.7759-2.7759a2.0025,2.0025,0,0,0,0-2.8286L22.5869,2.5849a2.0021,2.0021,0,0,0-2.8286,0L6.5859,15.7573a2.0027,2.0027,0,0,0,0,2.8286l2.8282,2.8282a2.0024,2.0024,0,0,0,2.8286,0l4.7749-4.7754a3.9329,3.9329,0,0,0,5.5139.4326A5.9442,5.9442,0,0,1,23.1775,24H16v4H4v2H28V24ZM10.8281,20,8,17.1714,9.8787,15.293l2.8283,2.8281ZM16,14a3.9811,3.9811,0,0,0,.0762.7524L14.1211,16.707l-2.8284-2.8281,9.88-9.88L24.001,6.8271l-3.2488,3.2491A3.9771,3.9771,0,0,0,16,14Zm4,2a2,2,0,1,1,2-2A2.0023,2.0023,0,0,1,20,16Zm6,12H18V26h8Z"/><rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/></svg>
+
+        <p style="position: absolute; font-size:18px;left: 706px; top:120px;"><b>Dr.Noordam</b>
+        </p>
+
+        <p style="position: absolute; font-size:18px;left: 1006px; top:120px;"><b>Mr.Dzousa</b>
+        </p>
+
+        <p style="position: absolute; font-size:18px;left: 1306px; top:120px;"><b>Dr.Lee</b>
+        </p>
+
+        <p style="position: absolute; font-weight:300;font-size:16px;left: 706px; top:200px;">Dr.Noordam cares your oral<br> health.
+
+            Oral health impacts<br> your
+            health and well-being,<br>
+            which in turn impacts your<br>
+            oral health. OurLong-term<br>
+            goal is to coath you to your<br>
+            optimal oral health<br>
+        </p>
+
+        <p style="position: absolute; font-weight:300;font-size:16px;left: 1006px; top:200px;">Mr.Dzousa provides friendly<br> services.
+
+            As your family dental<br> we are
+            happy to welcome <br>families to
+            our dental office in <br>Markham.
+            We are committed <br>to
+            maintain  the oral health<br> of
+            you and your family members<br>
+        </p>
+
+        <p style="position: absolute; font-weight:300;font-size:16px;left: 1306px; top:200px;">Dr.Lee provides most professional<br> services.
+
+            We are dedicated to providing<br>
+            proactive dental care to our<br>
+            patieents. we are happy to<br>
+            offer a full lineup of dental<br>
+            solutions for cosmetic dentistry<br>
+            to restorative dentistry at our<br>
+            clinic in Markham<br>
+        </p>
+    </div>
+
+    <div style="background: #F4F4F4;width: 100%;height: 401px;min-width: 1950px;position:absolute;left: 0;top: 1652px; min-height: 401px">
+        <p style="position: absolute;left: 706px; top: 20px; font-size: 48px; font-weight: 400; font-family: IBMPlexMono">We are accepting new<br> patients</p>
+        <p style="position: absolute;left: 706px; top: 200px; font-size: 24px; font-weight: 300; font-family: IBMPlexMono">Dr. Lee and the team is available to provide care<br>
+            for you and your family.</p>
+        <button id="primeBtn2" onclick="raiseBookingPage()" class="primeBtn2" style="color: white; font-weight:400; font-size:24px; padding-left: 20px; text-align:left; position:absolute;left: 706px; bottom: 30px; width: 400px; height: 50px;">Book an appointment</button>
+    </div>
+
+    <div style="background: black; width: 100%; height: 301px;min-width: 1950px; position: absolute;left: 0; top: 2053px;">
+        <p style="position: absolute; left: 420px; top: 20px; color: white; font-size: 16px"><b>About us</b></p>
+        <p style="position: absolute; left: 420px; top: 60px; color: white; font-size: 16px; font-weight: 300;">3559 Davis Drive, MarkHam<br>
+            Ontrio, L3P 2M4<br>
+            Canada<br>
+
+            Tel.: 905-284-0330<br>
+            Email: drlee@dent.com<br></p>
+        <p style="position:absolute; left: 1006px; top: 60px; color: white; font-size: 16px; font-weight: 300">Monday &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10:00 - 18:00<br>
+            Tuesday   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10:00 - 18:00<br>
+            Wednesday &nbsp10:00 - 18:00<br>
+            Thursday  &nbsp&nbsp&nbsp&nbsp&nbsp10:00 - 18:00<br>
+            Friday    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10:00 - 18:00<br>
+            Saturday  &nbsp&nbsp&nbsp&nbsp&nbsp&nbspclosed<br>
+            Sunday    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspclosed<br>
+        </p>
+    </div>
+    </div>
+    <script src="homepage.js"></script>
+    <div id="booking" class="modal" style=" z-index: 2;display:none;">
+        <div class="container" >
+            <div>
+                <p style="font-weight: 400; font-size: 24px; position: absolute; left: 64px; top: 4px;">
+                    Book an appointment
+                </p>
+                <div class="bookLine" style="position: absolute; left: 0; top: 100px; width: 100%;"></div>
+                <p style="font-weight: 400; font-size: 16px; position:absolute; left: 64px; top: 110px;"><b>Service</b></p>
+                <p style="font-weight: 300; font-size: 12px; position: absolute; left: 64px; top: 170px;">Category</p>
+                <select id="category" class="catSel" style=" position: absolute; left: 64px; top: 215px;">
+                    <option value="Prevent Hygiene">Prevent Hygiene</option>
+                    <option value="Oral Surgeons">Oral Surgeons</option>
+                    <option value="Orthodontics">Orthodontics</option>
+                </select>
+                <p style="font-weight: 300; font-size: 12px; position: absolute; left: 64px; top: 275px;">Expert</p>
+                <select onclick="changeOptions()" class="catSel" id="expert" style=" position: absolute; left: 64px; top: 320px;">
+                </select>
+
+                <p><label style="font-weight: 300; font-size: 12px; position: absolute; left: 64px; top: 380px;" for="somethingToSay">Something to tell us?</label></p>
+                <textarea  class="someToSay" id="somethingToSay" name="somethingToSay" rows="4" cols="50"></textarea>
+
+                <p class="smallTitle" style="top: 555px"><b>Details</b></p>
+                <p class="thirdTitle" style="left: 64px;top: 615px"><label for="datePickerId">Date & Time</label></p>
+                <input class="secondSelect" id="timePickerId" style="top: 660px;right:64px;;display: inline-block;" type="time">
+                <input class="secondSelect" id="datePickerId" style="top: 660px;left: 64px;" type="date">
+
+                <p class="smallTitle" style="left: 64px;top: 720px;"><b>Contact information</b></p>
+                <p class="thirdTitle" style="left: 64px;top: 780px;"><label for="fnamePickerId">First name & Last Name</label></p>
+                <input class="secondSelect" id="fnamePickerId" style="top: 825px;left: 64px;">
+                <input class="secondSelect" id="lnamePickerId" style="top: 825px;right: 64px;">
+                <p class="thirdTitle" style="left: 64px;top: 885px;"><label for="emailPickerId">Email & Phone number</label></p>
+                <input class="secondSelect" id="emailPickerId" style="top: 935px;left: 64px;">
+                <input class="secondSelect" id="pNumberPickerId" style="top: 935px;right: 64px;">
+                <p class="thirdTitle" style="left: 64px;top: 995px;">Dr. Lee Dentistry clinic may use my contact data to keep informed of products, services and offerings:</p>
+                <p class="thirdTitle" style="left: 64px;top: 1040px;">You can unsubscribe from receiving marketing emails by clicking the unsubscribe link in each email. </p>
+                <button onclick="closeOverlay()" class="cancelBtn"
+                        style="float: left;width: 50%;height: 100px;position: absolute;
+                         top:1100px;left: 0;text-align: left; color: white;font-size: 16px; font-weight: 400;;">Cancel</button>
+                <button id="scheduleBtn" onclick="goNextOverlay()" class="scheduleBtn"
+                        style="float: left;width: 50%;height: 100px;position: absolute;
+                         top:1100px;right: 0;text-align: left; color: white;font-size: 16px; font-weight: 400;;">Schedule Meeting</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="confirming" class="modal" style=" z-index: 2;display:block;">
+        <div class="container" >
+            <p style="font-weight: 400; font-size: 24px; position: absolute; left: 64px; top: 4px;">
+                Your appointment is confirmed
+            </p>
+            <div class="bookLine" style="position: absolute; left: 0; top: 100px; width: 100%;"></div>
+            <p style="opacity: 1;color: rgba(0,0,0,1);font-family: 'IBMPlexSans';
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0px;
+            text-align: left;position: absolute;left: 64px;top: 115px">Thank you, John. Appointment details have been sent to your email. We look forward to speaking with you.</p>
+            <p class="smallTitle" style="top: 175px"><b>Confirm Id</b></p>
+            <p class="thirdTitle" style="left:64px;top: 210px;">SAIKJDLAISJDLIA</p>
+            <div class="bookLine" style="width: 100%;top: 260px;position: absolute;left: 0"></div>
+            <p class="smallTitle" style="top: 320px"><b>Service & expert</b></p>
+            <p class="thirdTitle" style="left:64px;top: 365px;">SAIKJDLAISJDLIA</p>
+            <div class="bookLine" style="width: 100%;top: 415px;position: absolute;left: 0"></div>
+            <p class="smallTitle" style="top: 475px"><b>Details</b></p>
+            <p class="thirdTitle" style="left:64px;top: 510px;">SAIKJDLAISJDLIA</p>
+            <div class="bookLine" style="width: 100%;top: 560px;position: absolute;left: 0"></div>
+            <p class="smallTitle" style="top: 620px"><b>Contact information</b></p>
+            <p class="thirdTitle" style="left:64px;top: 665px;">SAIKJDLAISJDLIA</p>
+            <div class="bookLine" style="width: 100%;top: 715px;position: absolute;left: 0"></div>
+            <button onclick="closeOverlay()" class="cancelBtn"
+                    style="float: left;width: 50%;height: 100px;position: absolute;
+                         top:720px;left: 0;text-align: left; color: white;font-size: 16px; font-weight: 400;;">Cancel</button>
+            <button id="scheduleBtn2" onclick="closeOverlay()" class="scheduleBtn"
+                    style="float: left;width: 50%;height: 100px;position: absolute;
+                         top:720px;right: 0;text-align: left; color: white;font-size: 16px; font-weight: 400;;">Schedule Meeting</button>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,297 @@
+
+.greyRec{
+    border: 1px solid rgba(244,244,244, 1);
+    opacity: 1;
+    background-color: rgba(244,244,244, 1);
+    width: 400px;
+    height: 48px;
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 0;
+}
+
+.blackRec{
+    border: 1px solid rgba(0,0,0, 1);
+    opacity: 1;
+    background-color: rgba(0,0,0, 1);
+    width:300px;
+    height: 48px;
+    position: absolute;
+    left: 400px;
+    top: 0;
+}
+
+.greyRec2{
+    border: 1px solid rgba(244,244,244, 1);
+    opacity: 1;
+    background-color: rgba(244,244,244, 1);
+    height: 48px;
+    position: absolute;
+    flex: 1;
+    top:0;
+}
+
+.titleText{
+    opacity: 1;
+    color: rgba(255,253,253,1);
+    font-family: "IBMPlexSans-SemiBold";
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: 12px;
+    margin-left: 20px;
+}
+
+.bgPic{
+    opacity: 1;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.905236) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.primeBtn{
+    border: 1px solid rgba(15,98,254, 1);
+    opacity: 1;
+    background-color: rgba(15,98,254, 1);
+    width: 250px;
+    height: 36px;
+    position: absolute;
+    left: 420px;
+    top: 390px;
+    font-family: "IBMPlexSans-Light";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 0;
+    color: rgba(255,255,255,1);
+    transition-duration: 0.4s;
+}
+
+.primeBtn:hover{
+    border: 1px solid #3b6caa;
+    opacity: 1;
+    background-color: #3b6caa;
+    width: 250px;
+    height: 36px;
+    position: absolute;
+    left: 420px;
+    top: 390px;
+    font-family: "IBMPlexSans-Light";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 0;
+    color: rgba(255,255,255,1);
+}
+
+.primeBtnText{
+    opacity: 1;
+    color: rgba(255,255,255,1);
+
+}
+
+.secBtn{
+    border: 0.5px solid rgba(15,98,254, 1);
+    opacity: 1;
+    background-color: rgba(255,255,255, 1);
+    width: 250px;
+    height: 36px;
+    position: absolute;
+    left: 750px;
+    transition-duration: 0.4s;
+    top: 390px;
+    color: rgba(15,98,254,1);
+    font-family: "IBMPlexSans-Light";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: 0;
+    text-align: left;
+}
+.secBtn:hover {
+    border: 1px solid rgba(15,98,254, 1);
+    opacity: 1;
+    background-color: rgba(15,98,254, 1);
+    width: 250px;
+    height: 36px;
+    position: absolute;
+    left: 750px;
+    top: 390px;
+    font-family: "IBMPlexSans-Light";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 0;
+    color: rgba(255,255,255,1);
+}
+
+.blueLine{
+    border: 1px solid rgba(15,98,254, 1);
+    opacity: 1;
+    background-color: rgba(15,98,254, 1);
+    width: 227px;
+    height: 3px;
+    position: absolute;
+    left: 411px;
+    top : 45px;
+}
+
+.drLeeText{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-family: "IBMPlexMono", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0;
+    text-align: left;
+    position: absolute;
+    top: 64px;
+    left: 420px;
+}
+
+.delText{
+    opacity: 1;
+    color: rgba(52,58,63,1);
+    font-family: "IBMPlexSans-Light";
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    position: absolute;
+    top: 333px;
+    left:420px
+}
+
+.textBtn{
+    background:none;
+    border:none;
+    transition-duration: 0.1s;
+}
+
+.textBtn:hover{
+    border-bottom: 2px solid rgba(15,98,254, 1);
+}
+
+.textBtn:focus{
+    background:none;
+    border-bottom: 2px solid rgba(15,98,254, 1);
+}
+
+.primeBtn2{
+    border: 1px solid rgba(15,98,254, 1);
+    opacity: 1;
+    background-color: rgba(15,98,254, 1);
+    transition-duration: 0.4s;
+}
+
+.primeBtn2:hover{
+    border: 1px solid #3b6caa;
+    opacity: 1;
+    background-color: #3b6caa;
+}
+
+.modal .container{
+    width: 50%;
+    height: 90%;
+    background-color: #F4F4F4;
+    position: fixed;
+    left: 25%;
+    right: 25%;
+    top: 5%;
+    bottom: 5%;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 1em;
+    overflow: auto;
+}
+
+.overlay{
+    background: black; opacity: 0.5; left: 0; top: 0; position: fixed; width: 100%; height: 100%;
+}
+
+.bookLine{
+    border: 1px solid rgba(151,151,151, 1);
+    opacity: 1;
+}
+
+.someToSay{
+    font-size: 16px;padding-left: 16px; padding-top : 5px;position: absolute; left: 64px; top: 425px; width: 83%; height: 100px
+}
+
+.someToSay:focus{
+    font-size: 16px;padding-left: 16px; padding-top : 5px;position: absolute; left: 64px; top: 425px; width: 83%; height: 100px;
+    border: 2px solid rgba(15,98,254, 1);
+    opacity: 1;
+}
+
+.someToSay:hover{
+    font-size: 16px;padding-left: 16px; padding-top : 5px;position: absolute; left: 64px; top: 425px; width: 83%; height: 100px;
+    border: 2px solid rgba(15,98,254, 1);
+    opacity: 1;
+}
+
+textarea{
+    outline: none;
+}
+
+select{
+    outline: none;
+}
+
+input{
+    outline: none;
+}
+
+.catSel{
+    width: 85%;height: 40px;padding-left: 16px;font-size : 14px; font-weight: 300;
+}
+
+.catSel:hover, .catSel:focus{
+    width: 85%;height: 40px;padding-left: 16px;font-size : 14px; font-weight: 300;
+    border: 2px solid rgba(15,98,254, 1);
+    opacity: 1;
+}
+
+.smallTitle{
+    font-weight: 400; font-size: 16px; position:absolute; left: 64px;
+}
+.thirdTitle{
+    font-weight: 300; font-size: 12px; position: absolute;
+}
+
+.secondSelect{
+    width: 40%;height: 40px;padding-left: 16px;font-size : 14px; font-weight: 300;position: absolute;
+}
+
+.secondSelect:hover, .secondSelect:focus{
+    width: 40%;height: 40px;padding-left: 16px;font-size : 14px; font-weight: 300;position: absolute;
+    border: 2px solid rgba(15,98,254, 1);
+    opacity: 1;
+}
+
+input, label {
+    display:block;
+}
+
+.cancelBtn{
+    opacity: 1;
+    background-color: rgba(57,57,57, 1);
+    border: 2px solid rgba(57,57,57, 1);
+}
+
+.scheduleBtn{
+    opacity: 1;
+    background-color: rgba(15,98,254, 1);
+    border: 2px solid rgba(15,98,254, 1);
+
+}
