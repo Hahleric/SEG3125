@@ -112,9 +112,11 @@
     letter-spacing: 0;
     line-height: 0;
     text-align: left;
+    border-radius: 5px;
 }
 .secBtn:hover {
     border: 1px solid rgba(15,98,254, 1);
+    border-radius: 5px;
     opacity: 1;
     background-color: rgba(15,98,254, 1);
     width: 250px;
@@ -199,7 +201,7 @@
     background-color: #3b6caa;
 }
 
-.modal .container{
+.mymodal .mycontainer{
     width: 50%;
     height: 90%;
     background-color: #F4F4F4;
