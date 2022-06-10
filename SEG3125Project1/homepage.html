@@ -43,6 +43,12 @@
         <button id="hygiene" class="textBtn" onclick="visibleByName('hygiene')" style="position: absolute; left: 706px; top: 50px; color: black;font-size: 16px; font-weight: 300">Prevent Hygiene</button>
         <button id="oral" onclick="visibleByName('oral')" class="textBtn" style="position: absolute; left: 906px; top: 50px; color: black;font-size: 16px; font-weight: 300">Oral Surgeons</button>
         <button id="orthog" onclick="visibleByName('orthog')" class="textBtn" style="position: absolute; left: 1106px; top: 50px; color: black;font-size: 16px; font-weight: 300">Orthodontics</button>
+        <p class="thirdTitle" style="position: absolute; left: 1306px; top: 36px; color: black;font-size: 16px; font-weight: 300">Tools:</p>
+
+        <img id="hygieneTool" src="pics/dental-tools-1.jpg" style="display:block;position:absolute;width: 400px; height: 90%; left: 1406px; top: 5%">
+        <img id="oralTool" src="pics/dental-tools.jpg" style="position:absolute;width: 400px; height: 90%; left: 1406px; top: 5%;display: none">
+        <img id="orthogTool" src="pics/tools-dentist-set-vector-9103778.jpg" style="position:absolute;width: 400px; height: 90%; left: 1406px; top: 5%;display: none">
+
         <div id="orthogText" style="display: none">
         <p style="position: absolute; left:706px; top :96px">
             <b style="font-size: 20px; font-family: IBMPlexSans;font-weight: 400 ">
@@ -185,7 +191,7 @@
                 <select onclick="changeOptions()" class="catSel" id="expert" style=" position: absolute; left: 64px; top: 320px;">
                 </select>
 
-                <p><label style="font-weight: 300; font-size: 12px; position: absolute; left: 64px; top: 380px;" for="somethingToSay">Something to tell us?</label></p>
+                <p><label style="font-weight: 300; font-size: 12px; position: absolute; left: 64px; top: 380px;" for="somethingToSay">Your health insurance number and Id</label></p>
                 <textarea  class="someToSay" id="somethingToSay" name="somethingToSay" rows="4" cols="50"></textarea>
 
                 <p class="smallTitle" style="top: 555px"><b>Details</b></p>
@@ -214,7 +220,7 @@
         </div>
     </div>
 
-    <div id="confirming" class="modal" style=" z-index: 2;display:block;">
+    <div id="confirming" class="modal" style=" z-index: 2;display:none;">
         <div class="container" >
             <p style="font-weight: 400; font-size: 24px; position: absolute; left: 64px; top: 4px;">
                 Your appointment is confirmed
@@ -240,10 +246,10 @@
             <div class="bookLine" style="width: 100%;top: 715px;position: absolute;left: 0"></div>
             <button onclick="closeOverlay()" class="cancelBtn"
                     style="float: left;width: 50%;height: 100px;position: absolute;
-                         top:720px;left: 0;text-align: left; color: white;font-size: 16px; font-weight: 400;;">Cancel</button>
-            <button id="scheduleBtn2" onclick="closeOverlay()" class="scheduleBtn"
+                         top:720px;left: 0;text-align: left; color: white;font-size: 16px; font-weight: 400;;">Go homepage</button>
+            <button id="scheduleBtn2" onclick="scheduleAnother()" class="scheduleBtn"
                     style="float: left;width: 50%;height: 100px;position: absolute;
-                         top:720px;right: 0;text-align: left; color: white;font-size: 16px; font-weight: 400;;">Schedule Meeting</button>
+                         top:720px;right: 0;text-align: left; color: white;font-size: 16px; font-weight: 400;;">Schedule another meeting</button>
         </div>
     </div>
 

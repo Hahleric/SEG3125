@@ -36,7 +36,7 @@ document.addEventListener("click", event => {
     const tDom = event.target;
     if (cDom.style.display === 'block'){
         console.log("executed2")
-        if (cDom == tDom || cDom.contains(tDom) || tDom == document.getElementById('primeBtn') || tDom == document.getElementById('primeBtn2')|| tDom == document.getElementById('secBtn')) {
+        if (cDom == tDom || cDom.contains(tDom) || tDom == document.getElementById('primeBtn') || tDom == document.getElementById('primeBtn2')|| tDom == document.getElementById('secBtn') || tDom==document.getElementById('scheduleBtn2')) {
             // ...
         } else {
             cDom.style.display = "none";
@@ -71,13 +71,24 @@ function raiseBookingPage(){
 }
 function visibleByName(text){
     let services = ['hygieneText', 'oralText', 'orthogText'];
+    let tools = ['hygieneTool','oralTool','orthogTool'];
     services.forEach(service =>{
         if (service !== (text +'Text')) {
-
+            document.getElementById(text+'Tool').style.display = 'none'
             document.getElementById(service).style.display = 'none';
         }
         else {
+            document.getElementById(text+'Tool').style.display = 'block'
             document.getElementById(service).style.display = 'block';
+        }
+    })
+
+    tools.forEach(tool =>{
+        if (tool !== (text +'Tool')) {
+            document.getElementById(tool).style.display = 'none'
+        }
+        else {
+            document.getElementById(tool).style.display = 'block'
         }
     })
 }
@@ -101,12 +112,18 @@ function closeOverlay(){
     document.getElementById("booking").style.display = 'none';
     document.getElementById('confirming').style.display = 'none';
     document.getElementById('overlay').style.cssText = '';
+    document.getElementsByTagName('body').item(0).style.overflowY = 'auto';
 }
 
 function goNextOverlay(){
     document.getElementById("booking").style.display = 'none';
     document.getElementById('confirming').style.display = 'block';
     document.getElementsByTagName('body').item(0).style.overflowY = 'auto';
+}
+
+function scheduleAnother(){
+    closeOverlay();
+    raiseBookingPage();
 }
 
 
